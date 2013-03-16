@@ -1,6 +1,7 @@
 //The file that works with the Ace Editor library to enable collaboration
 //uses Socket.io for real time multiuser stuff
 //will document the code better a little later.
+//ace.ajax.org for more info.
 var socket = io.connect(window.location.origin);
 var members = [];
 var nickname = '';
@@ -12,7 +13,7 @@ var docVersion = 0,
 
 window.onload = function() {
   aceEditor = ace.edit("editor");
-  aceEditor.setTheme("ace/theme/twilight");
+  aceEditor.setTheme("ace/theme/twilight"); //setting themes. 
 
   var JavaScriptMode = require("ace/mode/javascript").Mode;
   aceEditor.getSession().setMode(new JavaScriptMode());
