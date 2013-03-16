@@ -1,0 +1,27 @@
+{
+  "name": "codepool",
+  "version": "0.0.1",
+  "author": "Karthik Kannan (http://www.github.com/shoshin23)",
+  "description": "An online code collaboration tool in nodejs",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shoshin23/codepool.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "homepage": "http://www.github.com/shoshin23",
+  "scripts": {},
+   "dependencies": {
+    "express": "2.4.6",
+    "jade": ">= 0.0.1",
+    "socket.io": "0.8.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.4"
+  },
+  ],
+  "private": true
+}

@@ -1,0 +1,28 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+  body
+    .topbar
+      .fill
+        .container
+          h3
+            a(href='/') Code Pool
+          ul.nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#') About
+            li
+              a(href='#') Help
+          form.pull-right
+            input.input-small(type='text', placeholder='Username')
+            input.input-small(type='text', placeholder='Password')
+            button.btn(type='submit') Sign in
+    .container
+      .content!= body
+      footer
+        a(href='http://www.github.com/Shoshin23') Follow on Github
+

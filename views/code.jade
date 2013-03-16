@@ -1,0 +1,18 @@
+script(src='/javascripts/ace/ace.js')
+script(src='/javascripts/ace/theme-twilight.js')
+script(src='/javascripts/ace/mode-javascript.js')
+script(src='/socket.io/socket.io.js')
+script(src='/javascripts/collab.js')
+.page-header
+  h1 app.js 
+    sample nodejs code to play around with.
+.row
+  .span11
+    pre#editor(style='width:620px;height:500px', onkeypress="return keyHandler(event)")
+      = code
+  .span3
+    pre.members
+    pre.chatbox
+    form(action='',onsubmit='sendChat(); return false;')
+      input.chat
+      input(type='submit',style='display:none;')
