@@ -8,6 +8,7 @@ var app = module.exports = express.createServer();
 
 var io = require('socket.io').listen(app);
 
+
 // Configuration
 
 app.configure(function(){
@@ -54,7 +55,11 @@ app.get('/code/:id', function(req, res){
   });
 });
 
-app.listen(3000);
+var port = process.env.PORT || 3000
+
+app.listen(port, function(){
+  console.log("Express server listening on port "+ port);
+});
 
 // socket I/O shit. will add more comments.
 
